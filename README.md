@@ -2,8 +2,8 @@
 
 An animation project in flutter
 
-## Getting Started
-
+`## Getting Started
+`
 This project is a starting point for a Flutter application using animation.
 
 A few resources to get you started if this is your first Flutter project:

@@ -10,3 +10,12 @@ Map<String, Widget> animationWidgets = {
   "Stack And Rotate 3D": const StackAndRotate3D(),
   "Hero Animation Displace": const Displace(),
 };
+
+@immutable
+class Person {
+  final String name;
+  final int age;
+  final String emoji;
+
+  const Person({required this.name, required this.age, required this.emoji});
+}

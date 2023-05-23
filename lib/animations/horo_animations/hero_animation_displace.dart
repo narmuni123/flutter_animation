@@ -1,3 +1,4 @@
+import 'package:animation/animations/horo_animations/details_page.dart';
 import 'package:animation/data/widget_list.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,7 @@ class Displace extends StatefulWidget {
 }
 
 class _DisplaceState extends State<Displace> {
-  const List<Person> person = [
+  List<Person> person = const [
     Person(name: "John", age: 20, emoji: "😃"),
     Person(name: "Jane", age: 22, emoji: "😁"),
     Person(name: "Jack", age: 23, emoji: "😂"),
@@ -27,7 +28,21 @@ class _DisplaceState extends State<Displace> {
         shrinkWrap: true,
         itemBuilder: (_, int index) {
           return ListTile(
-            leading: Text(person[index].emoji),
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => DetailsPage(
+                    person: person[index],
+                  ),
+                ),
+              );
+            },
+            leading: Text(
+              person[index].emoji,
+              style: const TextStyle(
+                fontSize: 40,
+              ),
+            ),
             title: Text(person[index].name),
             subtitle: Text("${person[index].age} years"),
           );

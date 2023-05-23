@@ -37,10 +37,13 @@ class _DisplaceState extends State<Displace> {
                 ),
               );
             },
-            leading: Text(
-              person[index].emoji,
-              style: const TextStyle(
-                fontSize: 40,
+            leading: Hero(
+              tag: person[index].name,
+              child: Text(
+                person[index].emoji,
+                style: const TextStyle(
+                  fontSize: 40,
+                ),
               ),
             ),
             title: Text(person[index].name),

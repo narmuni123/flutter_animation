@@ -1,7 +1,8 @@
-import 'package:animation/animations/chained_animation.dart';
-import 'package:animation/animations/horo_animations/hero_animation_displace.dart';
-import 'package:animation/animations/square_rotating.dart';
-import 'package:animation/animations/stack_and_rotate_3D.dart';
+import 'package:animation/animations/explicit_animation/chained_animation.dart';
+import 'package:animation/animations/explicit_animation/horo_animations/hero_animation_displace.dart';
+import 'package:animation/animations/explicit_animation/square_rotating.dart';
+import 'package:animation/animations/explicit_animation/stack_and_rotate_3D.dart';
+import 'package:animation/animations/implicit_animations/animated_container_image.dart';
 import 'package:flutter/cupertino.dart';
 
 Map<String, Widget> animationWidgets = {
@@ -9,6 +10,7 @@ Map<String, Widget> animationWidgets = {
   "Chained Animation": const ChainedAnimation(),
   "Stack And Rotate 3D": const StackAndRotate3D(),
   "Hero Animation Displace": const Displace(),
+  "Animated Container Widget": const AnimatedContainerImage(),
 };
 
 @immutable

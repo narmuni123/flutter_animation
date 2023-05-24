@@ -19,8 +19,15 @@ class _DisplaceState extends State<Displace> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white12,
       appBar: AppBar(
-        title: const Text("People"),
+        backgroundColor: Colors.white12,
+        title: const Text(
+          "People",
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
       ),
       body: ListView.builder(
         itemCount: person.length,
@@ -46,8 +53,14 @@ class _DisplaceState extends State<Displace> {
                 ),
               ),
             ),
-            title: Text(person[index].name),
-            subtitle: Text("${person[index].age} years"),
+            title: Text(
+              person[index].name,
+              style: const TextStyle(color: Colors.white),
+            ),
+            subtitle: Text(
+              "${person[index].age} years",
+              style: const TextStyle(color: Colors.white),
+            ),
           );
         },
       ),

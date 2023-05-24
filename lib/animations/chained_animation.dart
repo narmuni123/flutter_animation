@@ -123,6 +123,9 @@ class _ChainedAnimationState extends State<ChainedAnimation>
 
     return Scaffold(
       backgroundColor: Colors.white12,
+      appBar: AppBar(
+        backgroundColor: Colors.white12,
+      ),
       body: SafeArea(
         child: AnimatedBuilder(
           animation: _counterClockwiseRotationController,

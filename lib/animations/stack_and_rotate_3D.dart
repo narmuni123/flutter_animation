@@ -67,11 +67,14 @@ class _StackAndRotate3DState extends State<StackAndRotate3D>
       ..repeat();
     return Scaffold(
       backgroundColor: Colors.white12,
+      appBar: AppBar(
+        backgroundColor: Colors.white12,
+      ),
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 100,
               width: double.infinity,
             ),

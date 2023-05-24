@@ -9,7 +9,9 @@ class DetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white12,
       appBar: AppBar(
+        backgroundColor: Colors.white12,
         title: Hero(
           flightShuttleBuilder: (
             flightContext,
@@ -56,6 +58,7 @@ class DetailsPage extends StatelessWidget {
               person.name,
               style: const TextStyle(
                 fontSize: 20,
+                color: Colors.white,
               ),
             ),
             const SizedBox(
@@ -65,6 +68,7 @@ class DetailsPage extends StatelessWidget {
               "${person.age} years old",
               style: const TextStyle(
                 fontSize: 20,
+                color: Colors.white,
               ),
             ),
           ],

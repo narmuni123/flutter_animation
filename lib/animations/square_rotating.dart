@@ -43,6 +43,9 @@ class _SquareRotatingState extends State<SquareRotating>
     double width = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Colors.white12,
+      appBar: AppBar(
+        backgroundColor: Colors.white12,
+      ),
       body: SafeArea(
         child: Center(
           child: AnimatedBuilder(

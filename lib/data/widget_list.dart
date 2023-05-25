@@ -1,3 +1,4 @@
+import 'package:animation/animations/custom_paint/custom_shapes_animation.dart';
 import 'package:animation/animations/explicit_animation/chained_animation.dart';
 import 'package:animation/animations/explicit_animation/horo_animations/hero_animation_displace.dart';
 import 'package:animation/animations/explicit_animation/square_rotating.dart';
@@ -13,6 +14,7 @@ Map<String, Widget> animationWidgets = {
   "Hero Animation Displace": const Displace(),
   "Animated Container Widget": const AnimatedContainerImage(),
   "Tween Animation Builder": const CustomClipperPath(),
+  "Custom Shapes Animation": const CustomShapesAnimation(),
 };
 
 @immutable

@@ -11,6 +11,8 @@ class CustomClipperPath extends StatefulWidget {
 class _CustomClipperPathState extends State<CustomClipperPath> {
   @override
   Widget build(BuildContext context) {
+    var _color = getRandomColor();
+
     return Scaffold(
       backgroundColor: Colors.white12,
       appBar: AppBar(
@@ -19,10 +21,31 @@ class _CustomClipperPathState extends State<CustomClipperPath> {
       body: Center(
         child: ClipPath(
           clipper: const CircleClipper(),
-          child: Container(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height,
-            color: Colors.redAccent,
+          child: TweenAnimationBuilder(
+            tween: ColorTween(
+              begin: getRandomColor(),
+              end: _color,
+            ),
+            onEnd: () {
+              setState(() {
+                _color = getRandomColor();
+              });
+            },
+            duration: const Duration(seconds: 1),
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.width,
+              color: Colors.red,
+            ),
+            builder: (context, Color? color, child) {
+              return ColorFiltered(
+                colorFilter: ColorFilter.mode(
+                  color!,
+                  BlendMode.srcATop,
+                ),
+                child: child,
+              );
+            },
           ),
         ),
       ),

@@ -92,4 +92,6 @@ class CircleClipper extends CustomClipper<Path> {
 
 // return a random color
 
-Color getRandomColor() => Color(0xFF000000 + math.Random().nextInt(0x00FFFFFF),);
+Color getRandomColor() => Color(
+      0xFF000000 + math.Random().nextInt(0x00FFFFFF),
+    );

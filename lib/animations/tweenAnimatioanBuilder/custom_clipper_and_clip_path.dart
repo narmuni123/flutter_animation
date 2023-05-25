@@ -1,3 +1,4 @@
+import 'package:animation/data/clipper_constant.dart';
 import 'package:flutter/material.dart';
 
 class CustomClipperPath extends StatefulWidget {
@@ -14,6 +15,16 @@ class _CustomClipperPathState extends State<CustomClipperPath> {
       backgroundColor: Colors.white12,
       appBar: AppBar(
         backgroundColor: Colors.white12,
+      ),
+      body: Center(
+        child: ClipPath(
+          clipper: const CircleClipper(),
+          child: Container(
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height,
+            color: Colors.redAccent,
+          ),
+        ),
       ),
     );
   }

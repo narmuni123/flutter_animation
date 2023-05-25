@@ -41,8 +41,11 @@ class _AnimatedContainerImageState extends State<AnimatedContainerImage> {
                 onPressed: () {
                   setState(() {
                     isZoomedIn = !isZoomedIn;
-                    width = ( isZoomedIn) ? MediaQuery.of(context).size.width : defaultWidth;
-                    curve = (isZoomedIn) ? Curves.bounceInOut : Curves.bounceInOut;
+                    width = (isZoomedIn)
+                        ? MediaQuery.of(context).size.width
+                        : defaultWidth;
+                    curve =
+                        (isZoomedIn) ? Curves.bounceInOut : Curves.bounceInOut;
                   });
                 },
                 child: Center(

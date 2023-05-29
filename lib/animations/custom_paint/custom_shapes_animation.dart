@@ -1,3 +1,4 @@
+import 'package:animation/data/clipper_constant.dart';
 import 'package:flutter/material.dart';
 
 class CustomShapesAnimation extends StatefulWidget {
@@ -10,12 +11,13 @@ class CustomShapesAnimation extends StatefulWidget {
 class _CustomShapesAnimationState extends State<CustomShapesAnimation> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white12,
       appBar: AppBar(
         backgroundColor: Colors.white12,
       ),
       body: CustomPaint(
+        painter: Polygon(sides: 3),
         child: SizedBox(
           width: MediaQuery.of(context).size.width,
           height: MediaQuery.of(context).size.width,

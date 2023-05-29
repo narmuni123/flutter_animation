@@ -96,18 +96,27 @@ Color getRandomColor() => Color(
       0xFF000000 + math.Random().nextInt(0x00FFFFFF),
     );
 
-
 // Custom Paint Folder -> custom_shapes_animation
 
 class Polygon extends CustomPainter {
-  n
+  final int sides;
 
+  Polygon({required this.sides});
 
   @override
   void paint(Canvas canvas, Size size) {
-    // TODO: implement paint
+    final paint = Paint()
+        ..color = Colors.blue
+        ..style = =PaintingStyle.stroke
+    ..strokeCap = StrokeCap.round
+    ..strokeWidth = 3;
+
+    final path = Path();
+    final center = Offset(size.width / 2, size.height / 2);
+    canvas.drawPath(path, paint); 
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
-
+  bool shouldRepaint(covariant CustomPainter oldDelegate) =>
+      oldDelegate is Polygon && oldDelegate.sides != sides;
+}

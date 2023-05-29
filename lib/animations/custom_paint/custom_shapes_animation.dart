@@ -10,8 +10,17 @@ class CustomShapesAnimation extends StatefulWidget {
 class _CustomShapesAnimationState extends State<CustomShapesAnimation> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  Scaffold(
       backgroundColor: Colors.white12,
+      appBar: AppBar(
+        backgroundColor: Colors.white12,
+      ),
+      body: CustomPaint(
+        child: SizedBox(
+          width: MediaQuery.of(context).size.width,
+          height: MediaQuery.of(context).size.width,
+        ),
+      ),
     );
   }
 }

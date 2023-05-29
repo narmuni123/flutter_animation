@@ -95,3 +95,19 @@ class CircleClipper extends CustomClipper<Path> {
 Color getRandomColor() => Color(
       0xFF000000 + math.Random().nextInt(0x00FFFFFF),
     );
+
+
+// Custom Paint Folder -> custom_shapes_animation
+
+class Polygon extends CustomPainter {
+  n
+
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    // TODO: implement paint
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
+

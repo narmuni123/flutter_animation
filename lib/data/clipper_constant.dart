@@ -97,7 +97,7 @@ Color getRandomColor() => Color(
       0xFF000000 + math.Random().nextInt(0x00FFFFFF),
     );
 
-// Custom Paint Folder -> custom_shapes_animation
+// Custom Paint Folder -> custom_shapes_animation ----->>>> start
 
 class Polygon extends CustomPainter {
   final int sides;

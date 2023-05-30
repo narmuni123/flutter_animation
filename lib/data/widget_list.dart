@@ -1,6 +1,6 @@
 import 'package:animation/animations/custom_paint/custom_shapes_animation.dart';
 import 'package:animation/animations/explicit_animation/chained_animation.dart';
-import 'package:animation/animations/explicit_animation/horo_animations/hero_animation_displace.dart';
+import 'package:animation/animations/explicit_animation/hero_animations/hero_animation_displace.dart';
 import 'package:animation/animations/explicit_animation/square_rotating.dart';
 import 'package:animation/animations/explicit_animation/stack_and_rotate_3D.dart';
 import 'package:animation/animations/implicit_animations/animated_container_image.dart';

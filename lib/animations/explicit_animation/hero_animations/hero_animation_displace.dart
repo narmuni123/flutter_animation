@@ -1,4 +1,4 @@
-import 'package:animation/animations/explicit_animation/horo_animations/details_page.dart';
+import 'package:animation/animations/explicit_animation/hero_animations/details_page.dart';
 import 'package:animation/data/widget_list.dart';
 import 'package:flutter/material.dart';
 

@@ -11,7 +11,7 @@ class CustomClipperPath extends StatefulWidget {
 class _CustomClipperPathState extends State<CustomClipperPath> {
   @override
   Widget build(BuildContext context) {
-    var _color = getRandomColor();
+    var randomColor = getRandomColor();
 
     return Scaffold(
       backgroundColor: Colors.white12,
@@ -24,11 +24,11 @@ class _CustomClipperPathState extends State<CustomClipperPath> {
           child: TweenAnimationBuilder(
             tween: ColorTween(
               begin: getRandomColor(),
-              end: _color,
+              end: randomColor,
             ),
             onEnd: () {
               setState(() {
-                _color = getRandomColor();
+                randomColor = getRandomColor();
               });
             },
             duration: const Duration(seconds: 1),

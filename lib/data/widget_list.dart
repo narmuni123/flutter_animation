@@ -1,3 +1,4 @@
+import 'package:animation/animations/3D/drawer.dart';
 import 'package:animation/animations/custom_paint/custom_shapes_animation.dart';
 import 'package:animation/animations/explicit_animation/chained_animation.dart';
 import 'package:animation/animations/explicit_animation/hero_animations/hero_animation_displace.dart';
@@ -15,6 +16,7 @@ Map<String, Widget> animationWidgets = {
   "Animated Container Widget": const AnimatedContainerImage(),
   "Tween Animation Builder": const CustomClipperPath(),
   "Custom Shapes Animation": const CustomShapesAnimation(),
+  "3D Drawer": const DrawerThreeD(),
 };
 
 @immutable

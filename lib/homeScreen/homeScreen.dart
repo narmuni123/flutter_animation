@@ -1,7 +1,6 @@
 import 'package:animation/data/widget_list.dart';
 import 'package:flutter/material.dart';
 
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -10,8 +9,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,15 +24,15 @@ class _HomeScreenState extends State<HomeScreen> {
         itemBuilder: (_, int index) {
           String key = animationWidgets.keys.elementAt(index);
           return ElevatedButton(
-             onPressed: () {
-               Navigator.push(
-                 context,
-                 MaterialPageRoute(builder: (context) => animationWidgets[key]!),
-               );
-             },
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => animationWidgets[key]!),
+              );
+            },
             child: Text(
-            key,
-          ),
+              key,
+            ),
           );
         },
       ),

@@ -6,5 +6,6 @@ jobs:
     steps:
       - checkout
       - run: flutter doctor
-      - run: flutter pub get
-      - run: flutter build apk  --split-per-abi
+      - run: flutter build apk --split-per-abi
+      - store_artifacts:
+          path: build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk
